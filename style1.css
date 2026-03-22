@@ -1,0 +1,223 @@
+body {
+    background-color: linen;
+}
+
+a:link {
+    color: #3f3a60;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #3f3a60;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+
+/*Creating grid layout*/
+#layout {
+    display: grid;
+    grid-template-rows: [topnav] 1fr [banner] 3fr [main] 7fr [footer] 1fr;
+    grid-template-columns: [sidebar] 1fr [main] 3fr;
+    gap: 20px 20px;
+    grid-template-areas:
+        'topnav topnav'
+        'banner banner'
+        'sidebar main'
+        'footer footer';
+}
+
+/*special formating for sidebar images to get padding on top and ensure the photos fit*/
+#sidebar img {
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+    padding-top: 20px;
+}
+
+/*changing default em behaviour*/
+em {
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Creating a navigation bar*/
+.topnav {
+    grid-area: topnav;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #3f3a60;
+    overflow: hidden;
+    border-radius: 1em;
+}
+
+/*setting the logo to the right of the navbar so that it separates it from the links*/
+.logo {
+    margin-right: auto;
+}
+
+/* Styling the links inside the navigation bar */
+.topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+/* Changing the color of links on hover */
+.topnav a:hover {
+    background-color: #b0c4de;
+    color: white;
+}
+
+#banner {
+    grid-area: banner;
+    display: flex;
+    flex-wrap:wrap;
+    column-gap: 20px;
+    background-color: lightsteelblue;
+    border-radius: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-wrap: wrap;
+    padding: 20px;
+}
+
+article {
+    display: flex;
+    flex-basis: min-content;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+/*Creating a sub-flex box to style the top line of text differently than the rest*/
+.subarticle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    text-wrap: wrap;
+}
+
+.subarticle>div {
+    display: flex;
+    flex: 1 1 100px;
+    padding: 10px;
+    margin: 10px 10px 10px 0px;
+    border: #3f3a60;
+    border-style: solid;
+}
+
+/*end of styling the sub-flex box*/
+
+/* Creating a flip card with the hexagon and rating*/
+.flip-card {
+    height: 100px;
+    aspect-ratio: cos(30deg);
+    clip-path: polygon(-50% 50%, 50% 100%, 150% 50%, 50% 0);
+    background-color: #3f3a60;
+    position: relative;
+    margin: 1em;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 10px;
+    color: white;
+    transition: tranform 0.8s;
+    transform-style: preserve-3d;
+    }
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the back side */
+.flip-card-back {
+    background-color:#3f3a60;
+    color: white;
+    transform: rotateY(180deg);
+  }
+/*end of flip card*/
+
+/*styling Tooltip boxes*/
+div#tipDiv {
+    padding: 10px;
+    margin: 10px 10px 10px 0px;
+    border: #3f3a60;
+    border-style: solid;
+    background-color: white
+}
+
+#main {
+    grid-area: main;
+    background-color: white;
+    border-radius: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+/*removing bullets to style them myself*/
+ul {
+    list-style-type: none;
+}
+
+#sidebar {
+    grid-area: sidebar;
+    border-radius: 1em;
+    background-color: steelblue;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+/*due to the colour of the sidebar I needed to specify special link colours*/
+#sidebar a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+#sidebar a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+/*due to the colour of footer I needed to specify special link colours*/
+#footer a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+#footer a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+#footer {
+    grid-area: footer;
+    border-radius: 1em;
+    background-color: #3f3a60;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 20px;
+}

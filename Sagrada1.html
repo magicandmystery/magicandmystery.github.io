@@ -1,0 +1,251 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Sagrada (2017)</title>
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=ifl" />
+    <style>
+         /*styling collapsible content*/
+ .collapsible {
+    background-color: white;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 25px;
+}
+
+/* Adding a background color to the button when it is active or hovered over */
+.active,
+.collapsible:hover {
+    background-color: lightsteelblue;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+
+.content {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+/*styling the content with a plus and minus*/
+.collapsible:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: left;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+    </style>
+    <script src="js/dw_tooltip_c.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        dw_Tooltip.defaultProps = {
+            //supportTouch: true, // set false by default
+            hoverable: true
+        }
+        /*Tooltip content on hover*/
+        dw_Tooltip.content_vars = {
+            L1: 'BGG user poll rating of best player count',
+            L2: 'BGG user poll rating of appropriate player age',
+            L3: 'Community rating for how difficult a game is to understand. Lower rating (lighter weight) means easier.',
+            L4: 'Play time: 8:39 minutes',
+            L5: 'Play time: 9.46 minutes'
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <div id="layout">
+        <div class="topnav">
+            <div class="logo"><img src="BGG Logo with words.png" alt="BGG Logo"></div>
+            <a href="https://boardgamegeek.com/">Home</a>
+            <a href="https://boardgamegeek.com/forums">Forums</a>
+            <a href="https://boardgamegeek.com/browse/boardgame">Browse</a>
+            <a href="https://boardgamegeek.com/market?pageid=1">Shopping</a>
+        </div>
+        
+        <div id="banner">
+            <img src="box art.jpg" alt="Box Art Sagrada">
+            <!-- Laying out flip card content -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h1>?</h1>
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>7.5</h1>
+                    </div>
+                </div>
+            </div>
+
+            <article>
+                <h1>Sagrada (2017)</h1>
+               <!--breaking out content into a subarticle to make a flexbox within the flexbox-->
+                <div class="subarticle">
+                    <div><em>Players:</em> 1 - 4; <a href="#" class="showTip L1"> Best at 2 </a></div>
+                    <div><em>Play Time:</em> 30 - 45 Minutes</div>
+                    <div><em>Age:</em> 14+;<a href="#" class="showTip L2"> <em>Community Rating:</em> 8+</a></div>
+                    <div><a href="#" class="showTip L3"><em>Weight:</em> 1.92/ 5</a></div>
+                </div>
+
+                <p><em>Alternate Names:</em> Саґрада; Саграда; ซากราดา;サグラダ; 聖家族大教堂 SAGRADA; 사그라다</p>
+                <p><em>Designer:</em> Adrian Ademescu, Daryl Andrews</p>
+                <p><em>Publisher:</em> Floodgate Games</p>
+                <p><em>Categories:</em> Dice; Puzzle</p>
+                <p><em>Mechanisms:</em> Contracts; Dice Rolling; End Game Bonuses; Grid Coverage</p>
+            </article>
+        </div>
+
+        <div id="main">
+            <article>
+                <h3> Official Homepage: <a target="_blank" href="https://floodgate.games/products/sagrada">Sagrada -
+                        Floodgate Games </a> </h3>
+                <h2>Description</h2>
+                <p>Draft dice and use special abilities in Sagrada to carefully construct your stained glass window
+                    masterpiece.</p>
+
+                <p>Each player builds a stained glass window by creating a grid of dice on their player board</p>
+                <p>Each board has some restrictions on which color or number of die can be placed there. Dice of the
+                    same number or color may never be placed next to each other.</p>
+                <p>Dice are drafted in player order, with the start player rotating each round, snaking back around
+                    after the last player drafts two dice.</p>
+                <p>Scoring is variable per game based on achieving various patterns and varieties of placement...as
+                    well
+                    as bonus points for high numbered dice of a particular hidden color goal.</p>
+                <p>Special abilities (cards) can be used to help you break the rules by spending skill tokens; once
+                    a
+                    tool is used, it then requires more skill tokens for the other players to use them. </p>
+
+                <p>The player with the highest scoring window wins! </p>
+
+                <button type="button" class="collapsible">
+                    <h4>Components</h4>
+                </button>
+                <div class="content">
+                    <ul>
+                        <li><span class="material-symbols-outlined">ifl</span> 4 Window Frame Player Boards</li>
+                        <li><span class="material-symbols-outlined">ifl</span> 1 Round Track (front)/Score Track (back)
+                        </li>
+                        <li><span class="material-symbols-outlined">ifl</span> 4 Score Markers</li>
+                        <li><span class="material-symbols-outlined">ifl</span> 12 Window Pattern Cards</li>
+                        <li><span class="material-symbols-outlined">ifl</span> 12 Tool Cards</li>
+                        <li><span class="material-symbols-outlined">ifl</span> 10 Public Objective Cards</li>
+                        <li><span class="material-symbols-outlined">ifl</span> 5 Private Objective Cards</li>
+                        <li><span class="material-symbols-outlined">ifl</span> 24 Favor Tokens</li>
+                        <li><span class="material-symbols-outlined">ifl</span> 1 Small Drawstring Favor Token Bag</li>
+                        <li><span class="material-symbols-outlined">ifl</span> 90 Dice (18x5 colors - red, yellow,
+                            green, blue, purple)</li>
+                        <li><span class="material-symbols-outlined">ifl</span> 1 Large Drawstring Dice Bag Embroidered
+                            with Sagrada Logo</li>
+                    </ul>
+                    <h5>Kickstarter Edition ALSO INCLUDES:</h5>
+                    <ul>
+                        <li><span class="material-symbols-outlined">ifl</span> 1 Kickstarter-themed Window Frame Player
+                            Board & Score Token</li>
+                        <li><span class="material-symbols-outlined">ifl</span> 1 Cardboard Dice Tray</li>
+                        <li><span class="material-symbols-outlined">ifl</span> 1 Sagrada Promo 1 Window Pattern Card
+                        </li>
+                    </ul>
+                </div>
+                <button type="button" class="collapsible">
+                    <h4>Awards & Honors</h4>
+                </button>
+                <div class="content">
+                    <ul>
+                        <li><span class="material-symbols-outlined">ifl</span> 2022 Guldbrikken Best Family Game
+                            Nominee</li>
+                        <li><span class="material-symbols-outlined">ifl</span> 2019 Gra Roku Family Game of the Year
+                            Nominee</li>
+                        <li><span class="material-symbols-outlined">ifl</span> 2019 GEEKS d'OURO Board Game of the
+                            Year Nominee</li>
+                        <li><span class="material-symbols-outlined">ifl</span> 2018 Origins Awards Best Family Game
+                            Nominee</li>
+                        <li><span class="material-symbols-outlined">ifl</span> 2018 Origins Awards Best Board Game
+                            Nominee</li>
+                        <li><span class="material-symbols-outlined">ifl</span> 2018 JUGuinho Families Game of the
+                            Year Finalist</li>
+                        <li><span class="material-symbols-outlined">ifl</span> 2018 Juego del Año Finalist</li>
+                        <li><span class="material-symbols-outlined">ifl</span> 2017 Meeples' Choice Nominee</li>
+                        <li><span class="material-symbols-outlined">ifl</span> 2017 Golden Geek Most Innovative
+                            Board Game Nominee</li>
+                        <li><span class="material-symbols-outlined">ifl</span> 2017 Golden Geek Board Game of the
+                            Year Nominee</li>
+                        <li><span class="material-symbols-outlined">ifl</span> 2017 Golden Geek Best Solo Board Game
+                            Nominee</li>
+                        <li><span class="material-symbols-outlined">ifl</span> 2017 Golden Geek Best Family Board
+                            Game Nominee</li>
+                        <li><span class="material-symbols-outlined">ifl</span> 2017 Golden Geek Best Board Game
+                            Artwork & Presentation Nominee</li>
+                        <li><span class="material-symbols-outlined">ifl</span> 2017 Cardboard Republic Architect
+                            Laurel Nominee</li>
+                    </ul>
+                </div>
+
+            </article>
+        </div>
+
+        <div id="sidebar">
+            <h2>How to Play</h2>
+
+            <h3>Rules</h3>
+            <p><a target="_blank" href="Sagrada Rules Floodgate.pdf">Sagrada Rules</a></p>
+            <h4>Solo Rules</h4>
+            <p><a target="_blank" href="Sagrada Solo Rules.pdf">Sagrada Solo Rules with Passion Expansion</a></p>
+            <p><a target="_blank" href="Sagrada Solo Rules Deluxe.pdf">Sagrada Solo Rules Deluxe</a></p>
+            <p><a target="_blank" href="Sagrada Solo Rules - Low Ink.pdf">Sagrada Solo Rules - Low Ink</a></p>
+
+            <h3>How to Videos</h3>
+            <p>Short on time? Watch one of the "How to" videos below:</p>
+            <a class="showTip L4" target="blank"
+                href="https://boardgamegeek.com/video/153248/sagrada/sagrada-how-to-play-by-watch-it-played"><img
+                    src="How To Play - Watch It Played.jpg" alt="Watch it played"> </a>
+            <a class="showTip L5" target="_blank"
+                href="https://boardgamegeek.com/video/511434/sagrada/quick-how-to-play-for-sagrada"><img
+                    src="How to Play - gperks 2024.jpg" alt="How to Play"> </a>
+        </div>
+
+        <div id="footer">
+            <p>Created by Miranda De Jong based on web content found at:
+                <a target="_blank" href="https://boardgamegeek.com/boardgame/199561/sagrada">Board Game Geek -
+                    Sagrada</a>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "1px";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
